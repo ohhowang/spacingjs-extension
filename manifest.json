@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Spacing.js",
+  "version": "1.0",
+  "description": "A JavaScript utility for measuring the spacing between elements on webpage",
+  "author": "sxei",
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["spacing.js"]
+    }
+  ]
+}
